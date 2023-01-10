@@ -8,8 +8,7 @@ ENV DEBCONF_NOWARNINGS=yes
 RUN apt-get update -q && \
     apt-get install -y --no-install-recommends \
         wkhtmltopdf \
-        fonts-ipafont \
-        fonts-ipaexfont \
+        fonts-noto-cjk \
         && \
     fc-cache -fv && \
     apt-get clean && \
